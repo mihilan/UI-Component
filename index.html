@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<link rel = "stylesheet" href = "./style.css">
+	
+</head>
+
+
+<body>
+	<div class = "container" >
+		<div class="text" id="text">
+			<input type="text" class="status" id="status" placeholder="What's on your Mind?....">
+		</div>
+		<div class="gif">
+		<div >
+			<button type="button" class="gif_button" onClick="gif()" >
+			<span style = "color : #e314ba">G</span><span style = "color : #2614e3">i</span><span style = "color : #e35614">f</span>
+			</button>
+			
+		</div>
+		
+		<button type = "button" onClick="post()" class = "postbutton"> POST </button>
+		</div>
+	</div>
+	<div class="gif_container" id="containers" style="display: none;">
+			<input type= "text" id="query"><button onClick="search()" class="search_button">Search</button>
+			<div id = "gifitems">
+			</div>
+			</div>
+	<div class= "posts">
+		<ul id="list" class="post_list">
+		
+		</ul>
+	</div>
+
+<script src="./script.js"> </script>
+</body>
