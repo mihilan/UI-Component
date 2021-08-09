@@ -10,7 +10,7 @@ const gif = ()=>{
 }
 
 const trending = ()=>{
-	let api_key = "YOUR API KEY";
+	let api_key = "qR706XOg5yDzr5UpPggrmbBIfu5tpmH0";
 	let url = "https://api.giphy.com/v1/gifs/trending?api_key=" + api_key;
 	fetch(url)
 	.then(response => response.json())
@@ -31,7 +31,7 @@ const search = ()=>{
 	let query = document.getElementById("query").value;
 	let clear = document.getElementById("gifitems");
 	clear.innerHTML = "";
-	let api_key = "YOUR API KEY";
+	let api_key = "qR706XOg5yDzr5UpPggrmbBIfu5tpmH0";
 	let url = `https://api.giphy.com/v1/gifs/search?q=${query}&rating=g&api_key=${api_key}`;
 	fetch(url)
 	.then(response => response.json())
